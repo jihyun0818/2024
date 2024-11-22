@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/* 전체 초기화 */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  /* outline: 1px solid red; 디버깅용 주석 */
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/2024/imges/나안아.png) no-repeat 50% 50% / cover; /* 배경 이미지 크기를 cover로 수정 */
+}
+
+body::before {
+  content: ''; /* 배경 블러 처리를 위한 가상 요소 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* rjaw색 반투명 레이어 */
+  backdrop-filter: blur(88px); /* 배경 블러 효과 */
+  z-index: -1; /* 가상 요소를 본문 뒤로 */
+}
+
+.profileImg {
+  width: 100%; /* 요소 너비 */
+  height: 100%; /* 요소 높이 */
+  background: url(/2024/imges/나안아.png) no-repeat center / cover; /* 비율 유지 및 요소 채우기 */
+  border: 3px solid rgb(0, 0, 0); /* 테두리 */
+  border-radius: 10px; /* 모서리 둥글게 */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* 그림자 */
+}
+
+main {
+  width: 1080px;
+  padding: 40px; /* 상하좌우 여백 */
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* 그림자 살짝 조정 */
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2); /* 흰색 반투명 배경 추가 */
+  overflow: hidden;
+}
+
+h1 {
+  flex: 0 0 100%;
+  font-size: 60px; /* 폰트 크기 약간 줄임 */
+  line-height: 1.2;
+  text-align: center;
+  color: #ffffff; /* 텍스트 흰색 */
+}
+
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 간격 조금 늘림 */
+}
+
+section h2 {
+  font-size: 36px; /* 폰트 크기 약간 줄임 */
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #ffffff; /* 텍스트 흰색 */
+}
+
+section .profileImg {
+  width: 300px; /* 프로필 이미지 크기 줄임 */
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* 이미지에 그림자 추가 */
+}
+
+section > p:first-of-type {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.contact {
+  display: flex;
+  gap: 40px; /* 간격 조정 */
+}
+
+.contact a:link,
+.contact a:visited {
+  color: #ffffff;
+  text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+.contact a:hover {
+  text-decoration: underline; /* 호버 시 밑줄 추가 */
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px; /* 간격 축소 */
+}
+
+form > span {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form textarea {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  font-size: 16px; /* 입력 필드 텍스트 크기 */
+  background: rgba(255, 255, 255, 0.8); /* 필드 배경 투명도 조정 */
+}
+
+form textarea {
+  min-height: 100px; /* 높이 약간 증가 */
+  resize: none; /* 크기 조정 비활성화 */
+}
+
+form button {
+  border-radius: 8px;
+  padding: 12px;
+  background: #2c2c2c;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #1a1a1a; /* 버튼 호버 색상 어둡게 */
+}
