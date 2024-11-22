@@ -23,7 +23,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* rjaw색 반투명 레이어 */
+  background: rgba(0, 0, 0, 0.7);url(/2024/images/hug.png) no-repeat 50% 50% / cover; /* rjaw색 반투명 레이어 */
   backdrop-filter: blur(88px); /* 배경 블러 효과 */
   z-index: -1; /* 가상 요소를 본문 뒤로 */
 }
