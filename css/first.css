@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/2024/imges/나안아.png) no-repeat 50% 50% / cover; /* 배경 이미지 크기를 cover로 수정 */
+  background: url(/2024/images/나안아.png) no-repeat 50% 50% / cover; /* 배경 이미지 크기를 cover로 수정 */
 }
 
 body::before {
@@ -31,7 +31,7 @@ body::before {
 .profileImg {
   width: 100%; /* 요소 너비 */
   height: 100%; /* 요소 높이 */
-  background: url(/2024/imges/나안아.png) no-repeat center / cover; /* 비율 유지 및 요소 채우기 */
+  background: url(/2024/images/나안아.png) no-repeat center / cover; /* 비율 유지 및 요소 채우기 */
   border: 3px solid rgb(0, 0, 0); /* 테두리 */
   border-radius: 10px; /* 모서리 둥글게 */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* 그림자 */
