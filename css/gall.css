@@ -1,5 +1,9 @@
 @charset "UTF-8";
-/* Gallery Flex Layout */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.css');
+
+:root {
+  font-family: Pretendard;
+}
 
 body {
   margin: 20;
