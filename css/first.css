@@ -47,21 +47,24 @@ h1 {
   text-align: center;
   color: #ffffff;
 }
+h2 {
+  color: #ffffff;
+  text-align: center;
+}
 
+p {
+  text-align: center;
+  color: #ffffff;
+}
 .profileImg {
   width: 300px; /* 이미지의 고정 너비 */
-  height: 300px; /* 이미지의 고정 높이 */
-  border-radius: 50%; /* 완전한 원형으로 모서리 둥글게 */
+  height: 324px; /* 이미지의 고정 높이 */
+  border-radius: 24px; /* 완전한 원형으로 모서리 둥글게 */
   overflow: hidden; /* 테두리 밖의 이미지 숨김 */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   border: 3px solid #000000; /* 흰색 테두리 추가 */
   object-fit: cover;
   margin: 20px;
-}
-
-section > p:first-of-type {
-  color: #ffffff;
-  font-size: 16px;
 }
 
 .contact {
@@ -90,7 +93,7 @@ form input,
 form textarea {
   padding: 12px 16px;
   border-radius: 8px;
-  border: 1px solid #b3b3b3;
+  border: 1px solid #ffffff;
   font-size: 16px;
   background: rgba(255, 255, 255, 0.8);
 }
