@@ -3,7 +3,7 @@
 /* 전체 초기화 */
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 24;
   padding: 0;
 }
 
@@ -14,6 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(5px);
 }
 
 .container {
