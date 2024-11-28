@@ -105,6 +105,43 @@ button:hover {
   margin-bottom: 10px;
 }
 
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* 버튼과 수량 사이 간격 */
+}
+
+.quantity-display {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  min-width: 30px; /* 수량 크기 고정 */
+  text-align: center; /* 수량 가운데 정렬 */
+}
+
+.cart-item button {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cart-item button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
 /* 총합 스타일 */
 p {
   font-size: 1.5rem;

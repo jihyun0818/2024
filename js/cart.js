@@ -37,11 +37,14 @@ function updateCart() {
     const item = document.createElement("div");
     item.className = "cart-item";
 
-    // 상품 이름과 수량 표시
+    // 상품 이름과 금액 표시
     const itemName = document.createElement("span");
     itemName.textContent = `${name} (${(price * count).toLocaleString()}억)`;
 
-    // 수량 조절 버튼
+    // 수량 조절 버튼과 수량 표시
+    const controls = document.createElement("div");
+    controls.className = "quantity-controls";
+
     const increaseBtn = document.createElement("button");
     increaseBtn.textContent = "+";
     increaseBtn.addEventListener("click", () => {
@@ -60,6 +63,10 @@ function updateCart() {
       updateCart();
     });
 
+    const quantityDisplay = document.createElement("span");
+    quantityDisplay.textContent = count;
+    quantityDisplay.className = "quantity-display";
+
     // 삭제 버튼
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "삭제";
@@ -68,10 +75,14 @@ function updateCart() {
       updateCart();
     });
 
+    // 버튼과 수량을 묶어서 추가
+    controls.appendChild(decreaseBtn);
+    controls.appendChild(quantityDisplay);
+    controls.appendChild(increaseBtn);
+
     // 항목 추가
     item.appendChild(itemName);
-    item.appendChild(increaseBtn);
-    item.appendChild(decreaseBtn);
+    item.appendChild(controls);
     item.appendChild(deleteBtn);
     cartDisplay.appendChild(item);
   }
