@@ -39,7 +39,7 @@ function updateCart() {
 
     // 상품 이름과 수량 표시
     const itemName = document.createElement("span");
-    itemName.textContent = `${name} (${(price * count).toLocaleString()}원)`;
+    itemName.textContent = `${name} (${(price * count).toLocaleString()}억)`;
 
     // 수량 조절 버튼
     const increaseBtn = document.createElement("button");

@@ -20,7 +20,7 @@ body {
 /* 제목 스타일 */
 h1 {
   font-size: 2rem;
-  color: #ff7f50; /* 주황색 계열 */
+  color: #80d3c9; /* 민트 계열 */
   margin-bottom: 20px;
 }
 
@@ -38,44 +38,28 @@ h1 {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
-  overflow: hidden;
   text-align: center;
   color: white;
   font-size: 1rem;
-  padding: 10px;
+  padding: 16px;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
 button img {
   display: block;
-  margin: 0 auto 12px;
   width: 100%;
   border-radius: 8px;
 }
 
-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 16px;
-  background: rgba(255, 255, 255, 0.15);
-  border: none;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  font-size: 16px;
-  cursor: pointer;
-}
-
 button:hover {
-  background: rgba(255, 255, 255, 0.25);
-}
-
-#menu button:hover {
   transform: scale(1.05);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.25);
 }
 
 /* 장바구니 컨테이너 스타일 */
@@ -110,6 +94,6 @@ p {
 @media screen and (max-width: 768px) {
   #menu {
     grid-template-columns: repeat(2, 1fr); /* 모바일에서도 2열 유지 */
-    gap: 10px; /* 간격 조정 */
+    gap: 10px;
   }
 }
